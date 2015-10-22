@@ -1,0 +1,137 @@
+//
+// Responsive CSS File - Large Desktops ~1200px
+// --------------------------------------------------
+
+
+// Grid Variables
+// -------------------
+
+@containerWidth: 1170px;
+@columnCount:    12;
+@gutterRatio:    30%;
+
+
+// Type Variables
+// -------------------
+
+@fontSize: 15px;
+@lineHeight: 140%;
+
+// Headings
+// -------------------
+
+@heading1: 92px;
+
+
+// Base Styles
+// -------------------
+
+@import "_variables.less"; // site variables
+@import "_mixins.less"; // grid and mixins
+
+@media (min-width: 1200px) {
+	
+	@import "_layout.less";
+
+
+	// Custom Styles
+	// -------------------
+
+    /* SECTION INTRO */
+    #intro{
+      padding-bottom:375px;
+
+      img.intro-title{
+        margin-top:90px;
+      }
+
+      p.intro-blurb{
+        font-size:24px;
+        line-height:26px;
+        margin-top:35px;
+        margin-bottom:40px;
+      }
+
+    }
+
+    /* SECTION ACT NOW */
+    #act-now{
+      padding-top:100px;
+      padding-bottom:405px;
+
+      h4{
+        font-size:22px;
+        line-height:24px;
+        margin-bottom:45px;
+      }
+
+      h2{
+        font-size:51px;
+        line-height: 52px;
+        margin-bottom:45px;
+      }
+    }
+
+  /* SECTION BE A HERO */
+  #be-a-hero{
+    padding-top:80px;
+    padding-bottom:80px;
+
+    .be-a-hero-content{
+      margin-bottom:150px;
+
+      h3{
+        font-size:31px;
+        margin-top:0;
+        margin-bottom:25px;
+      }
+
+      p{
+        font-size:16px;
+        margin-top:0;
+        margin-bottom:0;
+      }
+    }
+
+    .form{
+      h1{
+        font-size:77px;
+        line-height:83px;
+      }
+    }
+
+    #form{
+      width:42%;
+
+      input{
+        font-size:24px;
+        width:87%;
+        padding: 4% 6%;
+      }
+    }
+
+    .recents{
+      text-align: left;
+
+      .minutes{
+        font-size:12px;
+      }
+
+      .joined{
+        font-size:18px;
+      }
+    }
+
+  }
+
+  /* FOOTER */
+  #footer{
+    padding-top:65px;
+    padding-bottom:210px;
+
+    img.logo{
+      width:15%;
+    }
+  }
+
+}

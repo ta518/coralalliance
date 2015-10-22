@@ -1,0 +1,145 @@
+//
+// Responsive CSS File - Tablet ~768px
+// --------------------------------------------------
+
+
+// Grid Variables
+// -------------------
+
+@containerWidth: 768px;
+@columnCount:    12;
+@gutterRatio:    25%;
+
+
+// Type Variables
+// -------------------
+
+@fontSize: 14px;
+@lineHeight: 140%;
+
+// Headings
+// -------------------
+
+@heading1: 42px;
+
+
+// Base Styles
+// -------------------
+
+@import "_variables.less"; // site variables
+@import "_mixins.less"; // grid and mixins	
+
+@media (min-width: 768px) and (max-width: 959px) {
+	
+	@import "_layout.less";
+	
+
+	// Custom Styles
+	// -------------------
+
+    /* SECTION INTRO */
+
+    #intro{
+      padding-top:50px;
+      padding-bottom:50px;
+
+      img.intro-title{
+        margin-top:40px;
+      }
+
+      p.intro-blurb{
+        font-size:28px;
+        line-height:30px;
+        margin-top:35px;
+        margin-bottom:40px;
+      }
+
+    }
+
+    /* SECTION ACT NOW */
+    #act-now{
+      padding-top:50px;
+      padding-bottom:50px;
+
+      h4{
+        font-size:24px;
+        line-height:26px;
+        margin-top:0;
+        margin-bottom:45px;
+        text-transform: uppercase;
+      }
+
+      h2{
+        font-size: 34px;
+        line-height: 36px;
+        margin-bottom:45px;
+      }
+    }
+
+  /* SECTION BE A HERO */
+  #be-a-hero{
+    padding-top:50px;
+    padding-bottom:50px;
+
+    .be-a-hero-content{
+      margin-bottom:50px;
+
+      h3{
+        font-size:28px;
+        margin-top:0;
+        margin-bottom:10px;
+      }
+
+      p{
+        font-size:18px;
+        margin-top:0;
+        margin-bottom:0;
+      }
+    }
+
+    .form{
+      h1{
+        font-size:60px;
+        line-height:62px;
+      }
+    }
+
+    #form{
+      input{
+        font-size:20px;
+        width:93%;
+        padding: 2% 3%;
+      }
+
+      .button{
+        width:99%;
+        margin-left:-5px;
+      }
+    }
+
+    .recents{
+      text-align: left;
+
+      .minutes{
+        font-size:12px;
+      }
+
+      .joined{
+        font-size:18px;
+      }
+    }
+
+  }
+
+  /* FOOTER */
+  #footer{
+    padding-top:50px;
+    padding-bottom:50px;
+
+    img.logo{
+      width:20%;
+    }
+  }
+
+
+}

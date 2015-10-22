@@ -1,0 +1,154 @@
+//
+// Responsive CSS File - Mobile < 768px
+// --------------------------------------------------
+
+
+// Grid Variables
+// -------------------
+
+@containerWidth: 100%;
+@columnCount:    1;
+@gutterRatio:    10%;
+
+
+// Type Variables
+// -------------------
+
+@fontSize: 16px;
+@lineHeight: 140%;
+
+
+// Base Styles
+// -------------------
+
+@import "_variables.less"; // site variables
+@import "_mixins.less"; // grid and mixins
+
+@media (max-width: 767px) {
+	
+	@import "_layout.less";
+
+
+	// Custom Styles
+	// -------------------
+
+    /* SECTION INTRO */
+
+    #intro{
+      padding-top:80px;
+      padding-bottom:80px;
+
+      img.intro-title{
+        margin-top:20px;
+      }
+
+      p.intro-blurb{
+        font-size:18px;
+        line-height:20px;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
+
+      .button{
+        font-size:20px;
+      }
+
+    }
+
+    /* SECTION ACT NOW */
+    #act-now{
+      padding-top:80px;
+      padding-bottom:80px;
+
+      h4{
+        font-size:24px;
+        line-height:26px;
+        margin-bottom:25px;
+      }
+
+      h2{
+        font-size: 26px;
+        line-height: 28px;
+        margin-bottom:45px;
+      }
+    }
+
+  /* SECTION BE A HERO */
+  #be-a-hero{
+    padding-top:80px;
+    padding-bottom:80px;
+
+    .be-a-hero-content{
+      margin-top:10px;
+      margin-bottom:10px;
+
+      h3{
+        font-size:28px;
+        margin-bottom:10px;
+        margin-top:0;
+      }
+
+      p{
+        font-size:18px;
+        margin-top:0;
+        margin-bottom:0;
+      }
+    }
+
+    .form{
+      text-align:left!important;
+
+      h1{
+        font-size:50px;
+        line-height:52px;
+        margin-top:40px;
+      }
+    }
+
+    #form{
+      input{
+        font-size:18px;
+        width:92%;
+        padding: 2% 3%;
+      }
+
+      .button{
+        width:99%;
+        margin-left:-13px;
+        font-size:20px;
+      }
+    }
+
+    .recents{
+      text-align: left;
+
+      .recent{
+        margin-bottom:40px;
+      }
+
+      .recent:last-child{
+        margin-bottom:0;
+      }
+
+      .minutes{
+        font-size:14px;
+      }
+
+      .joined{
+        font-size:18px;
+      }
+    }
+
+  }
+
+  /* FOOTER */
+  #footer{
+    padding-top:80px;
+    padding-bottom:80px;
+
+    img.logo{
+      width:35%;
+    }
+  }
+
+}
